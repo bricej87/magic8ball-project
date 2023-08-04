@@ -1,11 +1,11 @@
-var userName = 'Brice';
+const userName = 'Brice';
 if (userName) {
     console.log(`Hello, ${userName}!`);
 } else {
     console.log('Hello!');
 }
 
-var userQuestion = 'Will I grow to be over six feet tall?';
+const userQuestion = 'Will I grow to be over six feet tall?';
 if (userQuestion) {
     console.log(`${userName} asked, "${userQuestion}"`);
 }
@@ -14,26 +14,28 @@ let randomNumber = Math.floor(Math.random() * 8);
 
 let eightBall = '';
 if (randomNumber === 0) {
-    console.log('It is certain');
+    eightBall = 'It is certain';
 }
 else if (randomNumber === 1) {
-    console.log('It is decidedly so');
+    eightBall = 'It is decidedly so';
 }
 else if (randomNumber === 2) {
-    console.log('Reply hazy, try again');
+    eightBall = 'Reply hazy, try again';
 }
 else if (randomNumber === 3) {
-    console.log('Cannot predict now');
+    eightBall = 'Cannot predict now';
 }
 else if (randomNumber === 4) {
-    console.log('Do not count on it');
+    eightBall = 'Do not count on it';
 }
 else if (randomNumber === 5) {
-    console.log('My sources say no');
+    eightBall = 'My sources say no';
 }
 else if (randomNumber === 6) {
-    console.log('Outlook not so good');
+    eightBall = 'Outlook not so good';
 }
 else if (randomNumber === 7) {
-    console.log('Signs point to yes');
+    eightBall = 'Signs point to yes';
 }
+
+console.log(`Magic 8 Ball says: ${eightBall}.`);
